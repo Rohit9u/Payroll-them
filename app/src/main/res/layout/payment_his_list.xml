@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativehistlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilepicemphist"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/todo879"
+        android:src="@drawable/dpc" />
+
+    <TextView
+        android:id="@+id/empnamehist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="68dp"
+        android:text="@string/employee_name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/empidhist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/empnamehist"
+        android:text="@string/employee_idss"
+        android:textSize="20sp" />
+</RelativeLayout>

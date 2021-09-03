@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".payslipEmployee"
+    android:paddingLeft="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewszr"
+            android:layout_width="27dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/last_paymentszr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:gravity="end"
+            android:paddingEnd="5dp"
+            android:text="Last payment on: xx-xxxx-xxxx"
+            android:textSize="19sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dpcxr"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/dpc" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/emailt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Name"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/empidworkt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Employee Id"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/yeart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Year"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/monthT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Month"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/seasonalT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Seas. Bonus"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/contt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Other Bonus"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/jdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Absent"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/pfcutT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="PF cut"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/taxT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Tax"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/titleofjobt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Other Deduct."
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Salary Paid"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/providentfundt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Total Deduct."
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/nnnamer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:scrollHorizontally="true"
+                        android:text="Name"
+                        android:textSize="22sp" />
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/empidworkar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:scrollHorizontally="true"
+                        android:text="Employee Id"
+                        android:textSize="22sp" />
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/yearEr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Year"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/montheEr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Month"
+                    android:textSize="22sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/seasonalEr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:scrollHorizontally="true"
+                        android:text="Seasonal"
+                        android:textSize="22sp" />
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/otherEr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:scrollHorizontally="true"
+                        android:text="Other B"
+                        android:textSize="22sp" />
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/absentr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="absent"
+                    android:textSize="22sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/pfcytEr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:scrollHorizontally="true"
+                        android:text="pfCut"
+                        android:textSize="22sp" />
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/taxcutr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:scrollHorizontally="true"
+                        android:text="Tax"
+                        android:textSize="22sp" />
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/oCutEr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:scrollHorizontally="true"
+                        android:text="Other cut"
+                        android:textSize="22sp" />
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/paidSalaryEr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Salary"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tDeductEr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Total deduct"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

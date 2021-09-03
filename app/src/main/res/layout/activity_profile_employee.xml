@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".profileEmployee"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressbar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/last_paymentpro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:gravity="end"
+                android:paddingEnd="5dp"
+                android:text="Last payment on: xx-xxxx-xxxx"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dpcxx"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/dpc" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/emailt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Name"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/empidworkt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Employee Id"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/admt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Date of Birth"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/Gendert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Gender"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/corpt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Email"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/contt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Phone no."
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/jdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Joining Date"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/accountbankt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Account no."
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/deptofemot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Department"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/titleofjobt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Job Title"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/pfrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="PF rate"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Salary"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/providentfundt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Fund"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/employeeloant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Loan"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/addresssst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Address"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/nnnamepro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="25dp"
+                            android:scrollHorizontally="true"
+                            android:text="Name"
+                            android:textSize="22sp" />
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/empidworkpro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="25dp"
+                            android:scrollHorizontally="true"
+                            android:text="Employee Id"
+                            android:textSize="22sp" />
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/admtttspro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Date of Birth"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/GenderrrrPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Gender"
+                        android:textSize="22sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/corpggtsPro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="25dp"
+                            android:scrollHorizontally="true"
+                            android:text="Email"
+                            android:textSize="22sp" />
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/contPro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="25dp"
+                            android:scrollHorizontally="true"
+                            android:text="Phone no."
+                            android:textSize="22sp" />
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/joinindatePro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Joining Date"
+                        android:textSize="22sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/accountbankPro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="25dp"
+                            android:scrollHorizontally="true"
+                            android:text="Account no."
+                            android:textSize="22sp" />
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/deptofemoPro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="25dp"
+                            android:scrollHorizontally="true"
+                            android:text="Department"
+                            android:textSize="22sp" />
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/titleofjobPro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="25dp"
+                            android:scrollHorizontally="true"
+                            android:text="Job Title"
+                            android:textSize="22sp" />
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/pfsetPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="PF rate"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/salarysetPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Salary"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/providentfundPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Fund"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/employeeloanPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Loan"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/addressssPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="Address"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

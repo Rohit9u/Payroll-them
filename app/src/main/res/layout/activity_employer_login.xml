@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#1e254a"
+    android:gravity="center_horizontal"
+    tools:context=".Employer_login"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/amarante"
+        android:text="@string/employer_logins"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/todo5"
+        android:src="@drawable/corporate" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/emailidlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/dxx"
+            android:drawablePadding="15dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#9cffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/passwordlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailidlogin"
+            android:autofillHints=""
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/padlockx"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#9cffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/bg_login"
+        android:text="@string/login"
+        android:textColor="#321212"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progresslogn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/notRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/transparent"
+        android:text="@string/notRegyet"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="Forgot password? CLICK TO RESET"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</LinearLayout>

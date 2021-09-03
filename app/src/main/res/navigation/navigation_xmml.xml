@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/profile">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.payrollthem.ui.Profile.Profile"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/profile_fragment" />
+
+    <fragment
+        android:id="@+id/departments"
+        android:name="com.example.payrollthem.ui.Department.Department"
+        android:label="@string/menu_department"
+        tools:layout="@layout/department_fragment" />
+
+    <fragment
+        android:id="@+id/employee"
+        android:name="com.example.payrollthem.ui.Employees.Employee"
+        android:label="@string/menu_Employee"
+        tools:layout="@layout/employee_fragment" />
+    <fragment
+        android:id="@+id/pay_history"
+        android:name="com.example.payrollthem.ui.paymentHistory.PayHistory"
+        android:label="@string/pay_history"
+        tools:layout="@layout/pay_history_fragment"/>
+    <fragment
+        android:id="@+id/pay_slip"
+        android:name="com.example.payrollthem.ui.Payslip.paySlip"
+        android:label="@string/pay_slip"
+        tools:layout="@layout/pay_slip_fragment"/>
+    <fragment
+        android:id="@+id/payment_parameter"
+        android:name="com.example.payrollthem.ui.paymentParameter.paymentParameter"
+        android:label="Payment Parameter"
+        tools:layout="@layout/payment_parameter_fragment"/>
+
+</navigation>

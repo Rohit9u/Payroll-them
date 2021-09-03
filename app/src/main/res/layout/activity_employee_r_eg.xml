@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e254a"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/amarante"
+        android:text="@string/employee_login"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/employee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <EditText
+            android:id="@+id/CorporateIdreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/dc"
+            android:drawablePadding="15dp"
+            android:hint="Unique Corpotate Id"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#9cffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/employeeIDreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/dxx"
+            android:drawablePadding="15dp"
+            android:hint="@string/employee_id"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#9cffffff"
+            android:textSize="18sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/emailidempReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="15dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#9cffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/passwordempReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/padlockx"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#9cffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/passwordempRegcheck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:backgroundTint="#ffffff"
+            android:drawableLeft="@drawable/padlockx"
+            android:drawablePadding="15dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#9cffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayouttwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/warn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm password didn&apos;t match"
+            android:textColor="#ffc107" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/bg_login"
+        android:text="REGISTER"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/pbarsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

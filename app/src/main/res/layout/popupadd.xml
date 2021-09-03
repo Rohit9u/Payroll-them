@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="1dp"
+            app:cardUseCompatPadding="true">
+
+            <ProgressBar
+                android:id="@+id/cardProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/cardid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/emp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:autofillHints=""
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/emp_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emp_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/cal"
+                    android:focusable="true"
+                    android:hint="@string/date_of_birth"
+                    android:inputType="date"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/joining_dates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emp_age"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/cal"
+                    android:focusable="true"
+                    android:hint="Joining Date"
+                    android:inputType="date"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/emailemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/joining_dates"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/emp_ph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailemp"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/genderdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emp_ph"
+                    android:text="Gender"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/genderdesc"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/departdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gender"
+                    android:text="Department"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/emp_dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/departdesc"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/pfund"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emp_dept"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:hint="Minimum PF rate 12%"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pfund"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:hint="@string/address"
+                    android:inputType="textPostalAddress"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/accountNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_marginBottom="8dp"
+                    android:autofillHints=""
+                    android:hint="@string/bank_account_no"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accountNo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/green_gradient"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Next"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

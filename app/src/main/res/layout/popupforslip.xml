@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="1dp"
+        app:cardUseCompatPadding="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/departmentProgress"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardid">
+
+            <EditText
+                android:id="@+id/yearselects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:hint="Year"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <Spinner
+                android:id="@+id/months"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/yearselects"
+                android:layout_marginTop="18dp"
+                android:autofillHints=""
+                android:hint="Department ID"
+                android:inputType="number"
+                android:textSize="20sp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/getSlip"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/months"
+                android:text="get slip"
+                android:layout_marginBottom="8dp"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

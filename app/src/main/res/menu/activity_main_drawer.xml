@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Departments"
+        android:id="@+id/departments"
+        android:icon="@drawable/deprt">
+
+        <!--<menu>
+            <item
+                android:title="Hardware"
+                android:id="@+id/hardware_sec"
+                android:icon="@drawable/device_and_ha"/>
+            <item
+                android:title="Software"
+                android:icon="@drawable/software"
+                android:id="@+id/software_sec"/>
+            <item
+                android:title="Accounts and Finance"
+                android:icon="@drawable/account"
+                android:id="@+id/finance"/>
+            <item
+                android:title="Sales and Marketing"
+                android:icon="@drawable/accounts"
+                android:id="@+id/sales"/>
+            <item
+                android:title="Design"
+                android:icon="@drawable/design"
+                android:id="@+id/designs"/>
+
+        </menu>-->
+    </item>
+
+    <item
+        android:title="Employee"
+        android:id="@+id/employee"
+        android:icon="@drawable/empl">
+
+    </item>
+    <item android:title="Accounts">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="Pay slip"
+                    android:icon="@drawable/slips"
+                    android:id="@+id/pay_slip"/>
+                <item
+                    android:title="Payment Parameter"
+                    android:icon="@drawable/pyparrameter"
+                    android:id="@+id/payment_parameter"/>
+                <item
+                    android:title="Payment history"
+                    android:icon="@drawable/rtsev"
+                    android:id="@+id/pay_history"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="Logout"
+                    android:icon="@drawable/lgout"
+                    android:id="@+id/logoutid"/>
+                <item
+                    android:title="Profile"
+                    android:icon="@drawable/man"
+                    android:id="@+id/profile"/>
+            </group>
+
+        </menu>
+    </item>
+
+
+    <item
+        android:title="Quit"
+        android:id="@+id/quit_app"
+        android:icon="@drawable/quit">
+
+    </item>
+
+
+</menu>

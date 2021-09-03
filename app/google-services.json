@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "180328831658",
+    "project_id": "payroll-them",
+    "storage_bucket": "payroll-them.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180328831658:android:e36818bd7a4a18f7658ed3",
+        "android_client_info": {
+          "package_name": "com.example.payrollthem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180328831658-qcgmsei1tv0a346sdna60287f9o2d5b5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.payrollthem",
+            "certificate_hash": "1f9a11b94bc572f3a61fd952015b191650c556ef"
+          }
+        },
+        {
+          "client_id": "180328831658-1l8jkdbg7j3n5v3jl1bfd4r1inkrkbi8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAduN3AAnieWPfJX_nwc6gFE3Z9tlRwqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180328831658-1l8jkdbg7j3n5v3jl1bfd4r1inkrkbi8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
